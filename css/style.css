@@ -1,0 +1,33 @@
+.wrapperhis {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-areas: 
+    "he he he"
+    "na ma na"
+    "fo fo fo"
+    ;
+    grid-template-columns: 50px, 1fr, 50px;
+    grid-template-rows: 100px, 1fr, 100px;
+
+}
+
+.navhis {
+    grid-area: na;
+    background-color: darkred;
+
+}
+.mainhis {
+    grid-area: ma;
+    background-color: red;
+}
+
+.foothis {
+    grid-area: fo;
+    background-color: black;
+}
+
+.headerhis {
+    grid-area: he;
+    background-color: blue;
+}
