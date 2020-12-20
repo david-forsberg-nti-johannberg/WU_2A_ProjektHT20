@@ -1,3 +1,7 @@
+@font-face {
+    font-family: fire;
+    src: url(Fire.ttf);
+}
 * {
     margin: 0;
     padding: 0;
@@ -23,10 +27,14 @@
     grid-area: header;
     background-color:black;
     align-items: center;
+    font-family: fire;
 }
 .grid2 {
     grid-area: nav;
     background-color:darkred;
+    align-items: center;
+    padding: 20PX;
+    
 }
 .grid3 {
     grid-area: main;
@@ -37,9 +45,10 @@
     "box2"
     "box3"
     ;
-    grid-template-rows: 40;
-    grid-template-columns: 40px;
+    grid-template-rows: 80px;
+    grid-template-columns: 1fr;
     grid-gap: 20px;
+    padding: 40px;
 }
 .grid4 {
     grid-area: aside;
@@ -52,18 +61,18 @@
 
 .box1 {
     grid-area: box1;
-    background-color: blue;
-
+    background-color:rgba(255, 0, 0, 0.705);
+    box-shadow: 2px 2px 2px 2px RGBA(0, 0, 0, 100);
 }
 .box2 {
     grid-area: box2;
-    background-color: orange;
-
+    background-color:rgba(255, 0, 0, 0.705);
+    box-shadow: 2px 2px 2px 2px RGBA(0, 0, 0, 100);
 }
 .box3 {
     grid-area: box3;
-    background-color: palegoldenrod;
-
+    background-color:rgba(255, 0, 0, 0.705);
+    box-shadow: 2px 2px 2px 2px RGBA(0, 0, 0, 100);
 }
 
 .headertext {
@@ -75,7 +84,32 @@
 
 }
 
+.swedbanktext {
+    background-color:rgba(255, 0, 0, 0.705);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+    box-shadow: 2px 2px 2px 2px RGBA(0, 0, 0, 1000);
+}
 
+.jadu {
+    background-color:rgba(255, 0, 0, 0.705);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 2px 2px 2px 2px RGBA(0, 0, 0, 1000);
+}
+
+.leif {
+    border: black;
+    border-radius: 2px;
+    padding: 3px;
+    display: block;
+    position: absolute;
+    width: 50px;
+    right: 250px;
+    top: 125px;
+    
+}
 
 
 .wrapperhis {
@@ -95,6 +129,7 @@
 .navhis {
     grid-area: na;
     background-color: darkred;
+}
 
 }
 .mainhis {
